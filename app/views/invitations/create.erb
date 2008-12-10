@@ -1,0 +1,9 @@
+<h1>You sent Mercedes House invitations to the following friends:</h1>
+<br />
+<% @sent_to_ids.each do |id| %>
+  <%= fb_profile_pic id %>
+  <%= custom_fb_name id %>
+  <br />
+<% end %>
+<br />
+<%= link_to "Send another invitation", new_invitation_path %>

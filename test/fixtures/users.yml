@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  facebook_id: 1
+  session_key: MyString
+  house_id: 1
+
+two:
+  facebook_id: 1
+  session_key: MyString
+  house_id: 1

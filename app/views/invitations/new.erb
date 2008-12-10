@@ -1,0 +1,16 @@
+<%# content_for must be declared before fb_request_form %>
+<% content_for(:invite_message) do %>
+  Declare your Mercedes house allegiance!
+  <%= fb_req_choice("Loyal En Tout!",
+                    new_invitation_url(:from => current_user,
+                                       :canvas => true)) %>
+<% end %>
+
+<%# TODO define :action for Skip button %>
+<% fb_request_form("Mercedes House",
+                   :invite_message,
+                   invitations_path,
+                   :action => invitations_path) do %>
+  <%= fb_multi_friend_selector("Invite your friends to declare their Mercedes House allegiance.") %>
+<% end %>
+
